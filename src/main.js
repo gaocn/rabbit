@@ -8,4 +8,7 @@ import 'normalize.css'
 // 引入公用样式
 import '@/assets/styles/common.less'
 
-createApp(App).use(store).use(router).mount('#app')
+// 引入自定义插件
+import UI from '@/components/library'
+
+createApp(App).use(store).use(router).use(UI).mount('#app')

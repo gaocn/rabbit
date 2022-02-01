@@ -1,12 +1,14 @@
 <template>
-<div class="home-container">
-  首页
-</div>
+  <div class="container">
+    <home-category />
+  </div>
 </template>
 
 <script>
+import HomeCategory from './home-category.vue'
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: { HomeCategory }
 
 }
 </script>

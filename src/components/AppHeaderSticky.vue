@@ -13,18 +13,12 @@
 
 <script>
 import AppHeaderNav from './AppHeaderNav'
-import { onMounted, ref } from 'vue'
+import { useWindowScroll } from '@vueuse/core'
 export default {
   name: 'AppHeaderSticky',
   components: { AppHeaderNav },
   setup () {
-    const y = ref(0)
-    onMounted(() => {
-      window.onscroll = () => {
-        const scrollTop = document.documentElement.scrollTop
-        y.value = scrollTop
-      }
-    })
+    const { y } = useWindowScroll()
     return { y }
   }
 }
