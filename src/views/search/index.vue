@@ -4,7 +4,8 @@ index
 
 <script>
 export default {
-
+  setup () {
+  }
 }
 </script>
 

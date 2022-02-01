@@ -1,6 +1,10 @@
 <template>
-Rabbit
+主页
 </template>
+<script>
+export default {
 
+}
+</script>
 <style lang="less">
 </style>
