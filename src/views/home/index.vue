@@ -14,5 +14,6 @@ export default {
 <style lang="less" scoped>
 .home-container {
   .hoverShadow();
+  color: @warnColor;
 }
 </style>
