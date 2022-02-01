@@ -1,7 +1,7 @@
 <template>
 <div class="layout-container">
   <!-- 顶部导航栏 -->
-  <nav></nav>
+  <top-nav></top-nav>
 
   <!-- 头部组件 -->
   <header></header>
@@ -16,8 +16,10 @@
 </div>
 </template>
 <script>
+import TopNav from '@/components/TopNav.vue'
 export default {
-  name: 'HomeLayout'
+  name: 'HomeLayout',
+  components: { TopNav }
 }
 </script>
 <style lang="less" scoped>
