@@ -4,24 +4,37 @@
   <top-nav></top-nav>
 
   <!-- 头部组件 -->
-  <header></header>
+  <app-header></app-header>
+
+  <!-- 头部吸顶组件 -->
+  <app-header-sticky/>
 
   <!-- 内容容器 -->
-  <div class="main-container">
+  <main class="app-body">
     <!-- 二级路由 -->
     <router-view />
-  </div>
+  </main>
   <!-- 底部组件 -->
-  <footer></footer>
+  <app-footer></app-footer>
 </div>
 </template>
 <script>
 import TopNav from '@/components/TopNav.vue'
+import AppHeader from '@/components/AppHeader.vue'
+import AppHeaderSticky from '@/components/AppHeaderSticky.vue'
+import AppFooter from '@/components/AppFooter.vue'
+import { useStore } from 'vuex'
 export default {
   name: 'HomeLayout',
-  components: { TopNav }
+  components: { TopNav, AppHeader, AppHeaderSticky, AppFooter },
+  setup () {
+    const store = useStore()
+    store.dispatch('category/getHeadCategory')
+  }
 }
 </script>
 <style lang="less" scoped>
-
+.app-body {
+  min-height: 600px;
+}
 </style>

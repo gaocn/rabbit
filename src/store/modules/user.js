@@ -1,5 +1,5 @@
 export default {
-  namespace: true,
+  namespaced: true,
   // 用户信息
   state () {
     return {

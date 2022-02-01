@@ -1,5 +1,5 @@
 export default {
-  namespace: true,
+  namespaced: true,
   // 购物车状态
   state: () => {
     return {

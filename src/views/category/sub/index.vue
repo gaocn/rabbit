@@ -1,12 +1,12 @@
 <template>
 <div>
-  一级分类{{ id }}
+  二级分类{{ id }}
 </div>
 </template>
 
 <script>
 export default {
-  name: 'Category',
+  name: 'SubCategory',
   props: {
     id: {
       type: String,

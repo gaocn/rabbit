@@ -19,7 +19,7 @@ export default createStore({
   plugins: [
     createPersistedstate({
       key: 'rabbit',
-      paths: ['user', 'cart']
+      paths: ['user', 'cart', 'category']
     })
   ]
 })
